@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it -p 8888:8888 -v ${PWD}/src/:/home/jovyan/src/work --ipc=host jupyter/r-notebook:latest jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token=
+docker run -it --rm -p 8888:8888 -v ${PWD}/src/:/home/jovyan/work --ipc=host jupyter/r-notebook:latest jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token=
