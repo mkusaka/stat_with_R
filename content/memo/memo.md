@@ -1,7 +1,7 @@
 ---
 title: "Memo"
 date: 2019-02-11T15:51:45+09:00
-draft: true
+draft: false
 ---
 
 # これはなに
