@@ -9,7 +9,5 @@ parameters {
 }
 
 model {
-  for (i in 1:N) {
-    sales[i] ~ normal(mu, sigma);
-  }
+  sales ~ normal(mu, sigma);
 }
