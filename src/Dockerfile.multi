@@ -1,0 +1,3 @@
+FROM jupyter/r-notebook:latest
+
+RUN Rscript -e 'install.packages(c("rstan", "ggfortify", "brms"), repos = "https://cloud.r-project.org/", dependencies = TRUE)'
