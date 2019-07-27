@@ -1,4 +1,4 @@
 #!/bin/bash
 PORT=${1:-8888}
 open "http://localhost:"$PORT
-docker run -it --rm -p $PORT:8888 -v ${PWD}/src/:/home/jovyan/work --ipc=host mkusaka/r-jupyternotebook-stan-ggfortify-brms:2019-07-26-3 jupyter notebook --ip=0.0.0.0 --allow-root --NotebookApp.token=
+docker run -it --rm -p $PORT:8888 -v ${PWD}/src/:/home/jovyan/work --ipc=host mkusaka/r-jupyternotebook-stan-ggfortify-brms:2019-07-27
