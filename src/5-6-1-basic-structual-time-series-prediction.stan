@@ -39,7 +39,7 @@ generated quantities {
   gamma_pred[1:T] = gamma;
   for (i in 1:pred_term) {
     mu_pred[T + i] = normal_rng(mu_pred[T + i - 1], s_z);
-    gamma_pred[i] = normal_rng(-sum(gamma_pred[(T + i - 6):(T + i - 1)]), s_s);
+    gamma_pred[T + i] = normal_rng(-sum(gamma_pred[(T + i - 6):(T + i - 1)]), s_s);
     y_pred[i] = normal_rng(mu_pred[T + i] + gamma_pred[T + i], s_v);
   }
 }
